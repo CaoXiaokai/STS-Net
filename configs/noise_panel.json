@@ -1,0 +1,49 @@
+{
+  "dataset": "2a",
+  "subjects": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "conditions": [
+    {
+      "kind": "emg",
+      "snr_db": 20.0
+    },
+    {
+      "kind": "eog",
+      "snr_db": 20.0
+    },
+    {
+      "kind": "gaussian",
+      "snr_db": 20.0
+    },
+    {
+      "kind": "eog",
+      "snr_db": 10.0
+    },
+    {
+      "kind": "eog",
+      "snr_db": 12.0
+    },
+    {
+      "kind": "eog",
+      "snr_db": 15.0
+    },
+    {
+      "kind": "eog",
+      "snr_db": 25.0
+    }
+  ],
+  "unique_conditions": 7,
+  "models": 63,
+  "training_config": "clean_2a.json",
+  "source": "noise-robustness-20261005 frozen manifest",
+  "notes": "EOG 20 dB is shared by the two analyses and trained once per subject."
+}
