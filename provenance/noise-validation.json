@@ -1,0 +1,166 @@
+{
+  "status": "passed",
+  "training_executed": false,
+  "source_functions_ast_identical": {
+    "waveform_hash": true,
+    "make_bank": true,
+    "split_bank": true,
+    "build_noise": true
+  },
+  "clean_files_hashes_verified": 18,
+  "prepared_comparisons": [
+    {
+      "task_id": "emg-20dB-A01",
+      "mat": {
+        "T": {
+          "data_bitwise_equal": true,
+          "labels_bitwise_equal": true,
+          "array_sha256": "b6e44a23a18cd1750e0960a788d3cc296fc8d6d3e27a8d8a18428254466fb1cd"
+        },
+        "E": {
+          "data_bitwise_equal": true,
+          "labels_bitwise_equal": true,
+          "array_sha256": "5f37a56066447b64b7e169007ab9ffe0a6866a590dfe8d89fe1ca3e90b4b69c2"
+        }
+      },
+      "recipe_arrays_identical_except_documented_gaussian_none_sentinel": true,
+      "recipe_fields_checked": [
+        "noise_kind",
+        "snr_db",
+        "subject",
+        "train_seed",
+        "test_seed",
+        "filter_sos",
+        "source_split_seed",
+        "train_noise_unit_sha256",
+        "train_unit_power",
+        "train_trial_signal_power",
+        "train_trial_scale",
+        "train_actual_snr_db",
+        "train_source_record_ids",
+        "test_noise_unit_sha256",
+        "test_unit_power",
+        "test_trial_signal_power",
+        "test_trial_scale",
+        "test_actual_snr_db",
+        "test_source_record_ids"
+      ]
+    },
+    {
+      "task_id": "eog-20dB-A01",
+      "mat": {
+        "T": {
+          "data_bitwise_equal": true,
+          "labels_bitwise_equal": true,
+          "array_sha256": "7503a5881c566dadf0722a5315accf9fa15f39674a82c0fce042a88cff9da2ea"
+        },
+        "E": {
+          "data_bitwise_equal": true,
+          "labels_bitwise_equal": true,
+          "array_sha256": "0819c53257b780e076a7ebc2bb30abe93d5b2e327b2332177d58c8cf98b1d5bc"
+        }
+      },
+      "recipe_arrays_identical_except_documented_gaussian_none_sentinel": true,
+      "recipe_fields_checked": [
+        "noise_kind",
+        "snr_db",
+        "subject",
+        "train_seed",
+        "test_seed",
+        "filter_sos",
+        "source_split_seed",
+        "train_noise_unit_sha256",
+        "train_unit_power",
+        "train_trial_signal_power",
+        "train_trial_scale",
+        "train_actual_snr_db",
+        "train_source_record_ids",
+        "test_noise_unit_sha256",
+        "test_unit_power",
+        "test_trial_signal_power",
+        "test_trial_scale",
+        "test_actual_snr_db",
+        "test_source_record_ids"
+      ]
+    },
+    {
+      "task_id": "gaussian-20dB-A01",
+      "mat": {
+        "T": {
+          "data_bitwise_equal": true,
+          "labels_bitwise_equal": true,
+          "array_sha256": "26fc3abffa2c04f2efa77dc653f122cd261c3cb8ceddad8b94a4a9e43e49c096"
+        },
+        "E": {
+          "data_bitwise_equal": true,
+          "labels_bitwise_equal": true,
+          "array_sha256": "ab527af8a33c9779836e5eda702048e4f15423179b6da37cd5443215758f7467"
+        }
+      },
+      "recipe_arrays_identical_except_documented_gaussian_none_sentinel": true,
+      "recipe_fields_checked": [
+        "noise_kind",
+        "snr_db",
+        "subject",
+        "train_seed",
+        "test_seed",
+        "filter_sos",
+        "source_split_seed",
+        "train_noise_unit_sha256",
+        "train_unit_power",
+        "train_trial_signal_power",
+        "train_trial_scale",
+        "train_actual_snr_db",
+        "test_noise_unit_sha256",
+        "test_unit_power",
+        "test_trial_signal_power",
+        "test_trial_scale",
+        "test_actual_snr_db"
+      ]
+    },
+    {
+      "task_id": "eog-25dB-A01",
+      "mat": {
+        "T": {
+          "data_bitwise_equal": true,
+          "labels_bitwise_equal": true,
+          "array_sha256": "7281ed7183ecf4efde92e46e8c8358e2afe047f25923f51a137742efe86ca8b3"
+        },
+        "E": {
+          "data_bitwise_equal": true,
+          "labels_bitwise_equal": true,
+          "array_sha256": "9b403db16c349fe4235ed0e60432d2384dd30987e192728fa84f93db412b8715"
+        }
+      },
+      "recipe_arrays_identical_except_documented_gaussian_none_sentinel": true,
+      "recipe_fields_checked": [
+        "noise_kind",
+        "snr_db",
+        "subject",
+        "train_seed",
+        "test_seed",
+        "filter_sos",
+        "source_split_seed",
+        "train_noise_unit_sha256",
+        "train_unit_power",
+        "train_trial_signal_power",
+        "train_trial_scale",
+        "train_actual_snr_db",
+        "train_source_record_ids",
+        "test_noise_unit_sha256",
+        "test_unit_power",
+        "test_trial_signal_power",
+        "test_trial_scale",
+        "test_actual_snr_db",
+        "test_source_record_ids"
+      ]
+    }
+  ],
+  "known_metadata_change": "Gaussian source_split_seed None replaced by -1 to avoid object/pickle NPZ arrays; no numerical mixture change",
+  "prepare_cli_dry_run_passed": true,
+  "training_cli_help_import_passed": true,
+  "training_not_executed": true,
+  "dry_run_output_directory_not_created": true,
+  "portable_scripts_without_original_path_or_batch_import": true,
+  "native_train_one_subject_ast_unchanged": true
+}

@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "date": "2026-10-17",
+  "training_executed": false,
+  "checks": {
+    "python_syntax_and_no_machine_specific_paths": 11,
+    "all_json_valid": true,
+    "original_core_and_manuscript_unchanged": true,
+    "clean_2a_dry_run": true,
+    "clean_2b_dry_run": true,
+    "clean_training_parameters_match_source_configs": true,
+    "run_clean_help": true,
+    "prepare_noise_help": true,
+    "run_noise_help": true,
+    "export_noise_table_help": true,
+    "native_train_help": true,
+    "plot_noise_figures_help": true,
+    "noise_configuration_matches_clean_2a_and_18_inputs": true,
+    "eight_prepared_arrays_match_original_formal_inputs": true,
+    "native_training_evaluation_aggregation_functions_unchanged": true,
+    "no_datasets_checkpoints_logs_or_extra_figures_in_package": true
+  },
+  "scope_note": "Only existing implementations corresponding to included paper experiments are packaged. Missing original implementations are listed in docs/EXPERIMENT_SCOPE.md.",
+  "validation_limits": "Forward equivalence and input reconstruction are checks of packaging; no model was retrained and no paper score was re-estimated."
+}

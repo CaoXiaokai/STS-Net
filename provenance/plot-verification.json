@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "script_ast_valid": true,
+  "plot_cli_executed": true,
+  "two_figures_visually_checked": true,
+  "figures": [
+    {
+      "figure": "eog_snr_accuracy_comparison",
+      "new_size": [
+        5330,
+        3382
+      ],
+      "original_size": [
+        5330,
+        3382
+      ],
+      "pixel_identical_to_existing_figure": true,
+      "new_png_sha256": "1899b7c9d6c88ab9c052a3c0fac486f2275bb656c3b9d4085e90059a286d9cde"
+    },
+    {
+      "figure": "eog_accuracy_by_subject",
+      "new_size": [
+        4440,
+        3210
+      ],
+      "original_size": [
+        4440,
+        3210
+      ],
+      "pixel_identical_to_existing_figure": true,
+      "new_png_sha256": "c1c183b9978769c6fbd251f418fc3b17c5bad014930c2d0c8e3974dffbe5cdd1"
+    }
+  ],
+  "dependency_note": "numpy and matplotlib; validated in existing work/sts-env. Bundled primary Python lacks matplotlib; no packages were installed.",
+  "source_files_modified": false
+}

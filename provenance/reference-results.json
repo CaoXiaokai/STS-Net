@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "copied_files": [
+    {
+      "file": "subject_results.csv",
+      "source": "outputs/STS-Net-experiments/noise-panel-report-20261005/subject_results.csv",
+      "sha256": "4fbae039a3c577b47c9c0bd0d2ca6c4f568e10336729c1f89b1359e125b461ff",
+      "bytes": 8066
+    },
+    {
+      "file": "condition_summary.csv",
+      "source": "outputs/STS-Net-experiments/noise-panel-report-20261005/condition_summary.csv",
+      "sha256": "c60efa3f39f090e4014d488810a281ef1d8cca40a93153b35287a43ac13306f3",
+      "bytes": 1003
+    },
+    {
+      "file": "eog_snr_accuracy_data.csv",
+      "source": "outputs/STS-Net-experiments/eog-baseline-comparison-20261006-revised/eog_snr_accuracy_data.csv",
+      "sha256": "180013ae72ba5fb040a21b257ff4c69efbd69939c55ac15b96319141587ca1e0",
+      "bytes": 291
+    }
+  ],
+  "audited_noise_run": "outputs/STS-Net-experiments/runs/noise-robustness-20261005",
+  "audited_results_json_sha256": "815710ce5d210c3ce80c8fa62def941b498a1506ab04fa82803a9dbd76f8c71a",
+  "source_final_audit_sha256": "44285250d307f68b5f87f7bbeacfc7ec6e83f5ffdd94c11f39f1b5b7841f8808",
+  "all_63_subject_rows_and_seven_summaries_match_audited_results": true,
+  "seven_method_comparison_source": "Latest corrected user-provided server experiment table. Six baseline training implementations and server logs are not represented by this CSV.",
+  "scope": "Only the 20 dB three-noise conditions and five EOG SNR levels included in the manuscript; kappa is retained as original result data, not plotted.",
+  "figure_style_sources": [
+    {
+      "path": "work/plot_eog_subject_curves.py",
+      "sha256": "7e752ee2112c8f4a01db6a9927abd68ad3ae09f509aa60ddd5b947118614fc92"
+    },
+    {
+      "path": "work/plot_eog_baseline_comparison_20261006.py",
+      "sha256": "23fb20eb8f3ed0163e942762cb6fa8b2befb21a2adbbe506e4859a1af7ac456d"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "source_sha256": {
+    "train.py": "dd4d2c982d360ce9cd4a6700c915b2e68949f7dc634b5a6d5ab1067896740122",
+    "stsnet\\data.py": "4b22d08ca337a09ca2e94986a518c615ec7837014e5d7ff1409cd2a9f17c012e",
+    "stsnet\\metrics.py": "39464bf0518bc1d1c35771cf13821c50ced57bc07c0296dcbd7fae0217aa9ecb",
+    "stsnet\\model.py": "73b099951a6014f2e1e8ebfe6f7d033c32a8d236b34117c53152a971547c12d8",
+    "stsnet\\__init__.py": "bbeaed88be4095e7b73881e8b80ce1e7cc84a845d71a3191d9992a7edddc9744"
+  },
+  "output_sha256": {
+    "train.py": "805274364e7f8730ecfdc65ddb4a12da27ba2dd2bb30601ae09bc2c5bf0e3448",
+    "stsnet\\data.py": "4b22d08ca337a09ca2e94986a518c615ec7837014e5d7ff1409cd2a9f17c012e",
+    "stsnet\\metrics.py": "39464bf0518bc1d1c35771cf13821c50ced57bc07c0296dcbd7fae0217aa9ecb",
+    "stsnet\\model.py": "ae44dfab8ab0f8a1f82232b460662331f1d93b44ad5df27abb2140d1a7c3f913",
+    "stsnet\\__init__.py": "bbeaed88be4095e7b73881e8b80ce1e7cc84a845d71a3191d9992a7edddc9744"
+  },
+  "kept_model_definitions": [
+    "LegacyTemporalStem",
+    "PaperSparseAttention",
+    "PaperTransformerBlock",
+    "conv3",
+    "ChannelAttention",
+    "ShrinkageResidualBlock",
+    "PaperResNetHead",
+    "PaperSTSNet",
+    "STSNet"
+  ],
+  "identical_definition_count": 7,
+  "changes": [
+    "Model contains only seven unchanged dependencies plus PaperSTSNet and STSNet main paths.",
+    "PaperSTSNet rejects transformer styles other than paper; its paper branch is unchanged.",
+    "STSNet retains constructor signature and model.* checkpoint prefix; it rejects stems other than paper_exact.",
+    "STSNet forward is its original paper_exact forward call, with unreachable alternative routes removed.",
+    "train.py only restricts parser choices for stem and transformer-style; training, evaluation, metrics and data code are unchanged.",
+    "No experiment was run or score recomputed; no optimizer step is part of validation."
+  ],
+  "not_claimed": [
+    "historical Figure 2 ablation reproduction",
+    "historical Figure 3 t-SNE reproduction",
+    "Table 3 L-sweep reproduction",
+    "six baseline implementations"
+  ],
+  "top_k_note": "The recorded anchor has random_sparse=True; top_k is unused on that branch. No L-sweep runner is supplied.",
+  "source_package": "STS-Net-public-release-20260625_225951"
+}
