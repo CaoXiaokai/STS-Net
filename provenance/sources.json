@@ -1,0 +1,13 @@
+{
+  "manuscript_sha256": "3adb9694d241a18a262cadd5ba6a1f7692cf09c78576cb0e50bfb070b340c1dc",
+  "manuscript_filename": "manuscript-eswa.tex",
+  "manuscript_updated": "2026-10-11 20:00:44 +08:00",
+  "source_package": "STS-Net-public-release-20260625_225951",
+  "source_files": {
+    "code/train.py": "dd4d2c982d360ce9cd4a6700c915b2e68949f7dc634b5a6d5ab1067896740122",
+    "code/stsnet/model.py": "73b099951a6014f2e1e8ebfe6f7d033c32a8d236b34117c53152a971547c12d8",
+    "code/stsnet/data.py": "4b22d08ca337a09ca2e94986a518c615ec7837014e5d7ff1409cd2a9f17c012e",
+    "code/stsnet/metrics.py": "39464bf0518bc1d1c35771cf13821c50ced57bc07c0296dcbd7fae0217aa9ecb",
+    "requirements.txt": "0a8e3443802131818ddce5b3123121173997e11f9b02f56431caabbc7fe08d0e"
+  }
+}
