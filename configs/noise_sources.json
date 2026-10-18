@@ -1,0 +1,98 @@
+{
+  "dataset": "EEGdenoiseNet",
+  "upstream": "https://gin.g-node.org/NCClab/EEGdenoiseNet",
+  "eog_upstream": "https://github.com/ncclabsustech/EEGdenoiseNet",
+  "files": {
+    "EMG_all_epochs_512hz.npy": {
+      "sha256": "21e2233a2744a4b8074cfc50ea322a35d56cbc586338e5844aa79a61fb9b7146",
+      "shape": [
+        5598,
+        1024
+      ],
+      "sampling_hz": 512
+    },
+    "EOG_all_epochs.npy": {
+      "sha256": "fe31f2c22efce5da7488a1047b6f05d678e80f48d22e20a70972aaf13784fa0a",
+      "shape": [
+        3400,
+        512
+      ],
+      "sampling_hz": 256
+    },
+    "EOG_all_epochs.mat": {
+      "sha256": "d13fbaffcc7f5e317a7326a2e76faa8dad071b4239dc93a54e7e8905cec2692c"
+    }
+  },
+  "clean_2a_mat_sha256": {
+    "A01E.mat": "e514d0d0386cf6dd55bf26d0f5075446c7424d5e74b932dae220afdea9e8d44f",
+    "A01T.mat": "ebb9938e772f41d428587327b762aed5af7e9c84bf77481e09aab5530d027174",
+    "A02E.mat": "50a91d7879e3899f7410cf9600eeb53fa728cab0e614bcdd5173c6468b220cfc",
+    "A02T.mat": "91ae8ff05850bde2caf648061c69f5c8baa36dd866b19334300c4b0629c67335",
+    "A03E.mat": "05d449b2c02c2fd2eed71722aaadb823f3002701338be3af7a7fef7a417cbf94",
+    "A03T.mat": "2b6c34bb0d374342475d4322a86508e7e2d2e23b0b8e1c0d2eff6242e624c922",
+    "A04E.mat": "b7aa7c75db82c8b86bca10248682130094ba9b46eb454dc381294fc673f75478",
+    "A04T.mat": "d7277a99d5cc56c51544cbfe140e8c8f9c6bc047169c9598a694285cc7a696f8",
+    "A05E.mat": "96b1acf96f7088d3fd104d32321c15fcd73f1deb1ccb03e1b7ba8d84b4ee25e6",
+    "A05T.mat": "f5d8cf7551f51255b1cc322990e3e05ea440a748ff263d72b81827cc7f8dd26e",
+    "A06E.mat": "0663a8f8dabdfbe2a3624467b0e2c0d77e8b605f5d70627ca0064622d99f61c4",
+    "A06T.mat": "385c9573f90740f137e04f388ac6b9a81de66a5f7cd7a55e7c02349c2a8eb1dd",
+    "A07E.mat": "f1bd4f853ee73078e42727a87a7803a468da1c42b5a67730b2551670c846d580",
+    "A07T.mat": "acbd7f0d118b8bf5ee2f9e57f5291d4ac05936eed75d2a59bd5c550d5d7e693c",
+    "A08E.mat": "9b546f2c9653fe77aeedf53b0b03a4659d072b885364e53fce7f9294fb385aaf",
+    "A08T.mat": "d70e62e3d48d918a67fa05474fca196d07031abca16f9a7adec620b72ab421a8",
+    "A09E.mat": "2ccd13f01b14dd968305b3afdc8777028a45870322fa0294c782d27b3b40a165",
+    "A09T.mat": "0df17291df1e703f5ea6ca28d706658e51e53bc50a58dd621d677fb53bd70246"
+  },
+  "training_parameters": {
+    "dataset": "2a",
+    "band_dir": "BCI-38",
+    "file_prefix": "",
+    "norm_mode": "channel",
+    "epochs": 2000,
+    "batch_size": 72,
+    "aug_batch_size": 72,
+    "lr": 0.0002,
+    "weight_decay": 0.0001,
+    "adam_beta1": 0.5,
+    "dropout": 0.5,
+    "top_k": 8,
+    "stem": "paper_exact",
+    "kernels": "15,25,51",
+    "branch_channels": 16,
+    "conv_kernel": 25,
+    "pool_kernel": 75,
+    "pool_stride": 15,
+    "transformer_depth": 1,
+    "transformer_style": "paper",
+    "emb_size": 40,
+    "heads": 10,
+    "res_layers": 3,
+    "classifier_width": 192,
+    "threshold_dropout": 0.03,
+    "seed": 7,
+    "device": "",
+    "augment": true,
+    "aug_mode": "legacy_numpy",
+    "aug_segments": 8,
+    "cosine": false,
+    "grad_clip": 0.0,
+    "print_every": 100,
+    "stop_check_epoch": 0,
+    "stop_if_best_below": 0.0,
+    "resume": false,
+    "amp": true,
+    "random_sparse": true,
+    "sparsity_factor": 0.1,
+    "use_global_key": false,
+    "eval_train_mode": true
+  },
+  "protocol": {
+    "source_split": "Exact raw or processed duplicate groups stay together; canonical records split 80% T / 20% E",
+    "filter": "Chebyshev I, order 8, ripple 0.5 dB, 4-38 Hz, 250 Hz; sosfiltfilt applied to noise only",
+    "snr": "10 log10(mean(clean^2)/mean(added_noise^2)); each 22 x 1000 trial, before normalization",
+    "mixture": "One fixed T and E realization per subject and noise kind; same realization across SNR levels",
+    "normalization": "Native channel statistics fitted only on noisy T; applied to noisy T and E",
+    "augmentation": "Native within-class S&R on normalized noisy T; augmented examples are not re-scaled",
+    "source_caveat": "Real single-channel artifact records are mapped independently to 22 EEG channels. Record disjointness does not imply source-person/session disjointness."
+  }
+}
